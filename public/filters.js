@@ -79,13 +79,8 @@ function applyFilters() {
     applyWithData(cachedGeoJson);
     return;
   }
-  fetch("site_data/schools.geojson")
-    .then(res => res.json())
-    .then(geo_json_data => {
-      cachedGeoJson = geo_json_data;
-      applyWithData(geo_json_data);
-    })
-    .catch(err => console.error("Error loading schools.geojson:", err));
+  cachedGeoJson = schoolsData;
+  applyWithData(schoolsData);
 }
 
 

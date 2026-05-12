@@ -1,4 +1,4 @@
-{
+const schoolsData = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -51193,4 +51193,4 @@
       }
     }
   ]
-}
+};

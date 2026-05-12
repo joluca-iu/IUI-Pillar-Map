@@ -38,3 +38,10 @@ def export_school_campus_geojson(school_json: list, out_path: str | Path):
     geojson_data = create_geojson_feature_collection(out)
 
     out_path.write_text(json.dumps(geojson_data, indent=2), encoding="utf-8")
+
+    # Also write a JS-wrapped version so the map loads over file:// without CORS errors
+    js_path = out_path.with_name("schools-data.js")
+    js_path.write_text(
+        "const schoolsData = " + json.dumps(geojson_data, indent=2) + ";",
+        encoding="utf-8"
+    )
