@@ -23,7 +23,6 @@ html, body {
   padding: 12px;
   border: 2px solid #B9C1C6;
   border-radius: 8px;
-  overflow-y: auto;
   background: #EEEEF0;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -418,6 +417,79 @@ html, body {
 .partner-link:hover {
   color: #6b0010;
 }
+
+/* ── School search bar ─────────────────────────────────────────────────────── */
+
+.search-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #B9C1C6;
+}
+
+.search-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.school-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  border: 1px solid #B9C1C6;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.school-search-input:focus {
+  border-color: #990000;
+  box-shadow: 0 0 0 2px rgba(153, 0, 0, 0.15);
+}
+
+.school-search-dropdown {
+  margin-top: 2px;
+  background: #fff;
+  border: 1px solid #B9C1C6;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 9px 12px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-active {
+  background: #f5e6e6;
+  color: #990000;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
 
 .partner-link-empty {
   font-size: 11px;

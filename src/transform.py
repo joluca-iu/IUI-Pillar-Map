@@ -48,6 +48,7 @@ def _sanitize(v):
     if isinstance(v, list):
         return [_sanitize(val) for val in v]
     return v
+
 def transform_community_partners():
     ##Read data in from raw
     raw_data_dir = DATA_DIR / "raw"
@@ -116,7 +117,7 @@ def transform_community_partners():
     surviving_names = set(activities_by_name.keys())
 
     # Save filtered activity list for review
-    cleaned_data_dir = DATA_DIR / "cleaned"
+    cleaned_data_dir = DATA_DIR / "review"
     os.makedirs(cleaned_data_dir, exist_ok=True)
     pd.DataFrame(list(activities_by_name.values())).to_csv(
         cleaned_data_dir / "activities_date_filtered.csv", index=False
@@ -176,7 +177,7 @@ def transform_community_partners():
     )
 
     #Save partners with no real location before dropping them
-    cleaned_data_dir = DATA_DIR / "cleaned"
+    cleaned_data_dir = DATA_DIR / "review"
     os.makedirs(cleaned_data_dir, exist_ok=True)
 
     # Orgs with null lat/lon — truly missing coordinates
@@ -245,8 +246,5 @@ def transform_community_partners():
     ##Write combined data to cleaned folder
     #Community partners where duplicate schools on same campus are combined
     combined_df.to_csv(cleaned_data_dir / "combined_community_partners_by_campus.csv", index=False)
-    #Combined_Community_partners grouped by lat/lon so we only have unique map points
-    with open(cleaned_data_dir / "community_partners_groupedby_location.json", 'w', encoding='utf-8') as f:
-        json.dump(grouped_json, f, indent=2)
 
     return grouped_json

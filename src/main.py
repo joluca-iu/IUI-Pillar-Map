@@ -1,8 +1,6 @@
-from export_schools_geojson import export_school_campus_geojson
+from create_school_geojson import create_school_geojson
 from fetch import run_fetch
 from transform import transform_community_partners
-from export_campus_border_geojson import export_campus_border_geojson
-import os
 from utils.paths import PUBLIC_DIR
 
 def main():
@@ -14,9 +12,7 @@ def main():
 
     # Step 3: Export the combined cleaned data to JSON for mapping
     out_path_schools = PUBLIC_DIR / "site_data" / "schools.geojson"
-    out_path_campus_borders = PUBLIC_DIR / "site_data"
-    export_school_campus_geojson(grouped_df, out_path_schools)
-    export_campus_border_geojson(out_path_campus_borders)
+    create_school_geojson(grouped_df, out_path_schools)
 
 
 if __name__ == "__main__":

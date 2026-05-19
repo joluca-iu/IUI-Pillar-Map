@@ -4,7 +4,7 @@ import pandas as pd
 
 
 
-def export_school_campus_geojson(school_json: list, out_path: str | Path):
+def create_school_geojson(school_json: list, out_path: str | Path):
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
 

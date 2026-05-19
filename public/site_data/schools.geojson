@@ -1843,7 +1843,7 @@
             "contactEmails": "['']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'School of Dentistry', 'Center for Service and Learning']",
+            "unitNames": "['School of Dentistry', 'Center for Service and Learning', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -7853,7 +7853,7 @@
             "contactEmails": "['NA@email.com']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['Richard M. Fairbanks School of Public Health', 'School of Medicine', 'Health and Wellness Promotion', 'SLA: Communication Studies']",
+            "unitNames": "['SLA: Communication Studies', 'Health and Wellness Promotion', 'School of Medicine', 'Richard M. Fairbanks School of Public Health']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -14244,8 +14244,8 @@
                 "units": null,
                 "courses": null,
                 "goal_names": [
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 1: Workforce Development",
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 5: Global Perspectives"
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 5: Global Perspectives",
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 1: Workforce Development"
                 ],
                 "community_partners": [
                   {
@@ -15920,6 +15920,89 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -86.161435,
+          39.764
+        ]
+      },
+      "properties": {
+        "entity": [
+          {
+            "name": "Indiana Sports Corp.",
+            "id": "fd98758d-129a-41b7-6c6c-7efc5dc7668a",
+            "portal_name": "Indianapolis",
+            "street": "201 S. Capitol Ave.",
+            "street2": null,
+            "zipcode": 46225,
+            "city": "Indianapolis",
+            "state": "IN",
+            "county": null,
+            "country": "US",
+            "type": "nonprofit",
+            "description": "To create positive impact by hosting world-class sporting events that enhance vibrancy in the community, build civic pride, drive economic impact and media exposure, and encourage opportunities for youth.",
+            "url": "http://www.indianasportscorp.org/",
+            "phone": null,
+            "email": null,
+            "archived": false,
+            "status": "approved",
+            "activityName": [
+              "IU O'Neill Students Partner with NCAA on Final Four Sustainability Playbook"
+            ],
+            "activityCnt": 1,
+            "role": "",
+            "contactNames": "[' ']",
+            "contactEmails": "['']",
+            "courses": "",
+            "sectionCnt": 1,
+            "unitNames": "[\"Paul O'Neill School of Public and Environmental Affairs\"]",
+            "unitCnt": 1,
+            "externalId": "None",
+            "programs": [
+              "IUI 2030 Strategic Plan Pillar 3, Goal 3: Economic Development"
+            ],
+            "activities": [
+              {
+                "id": "2dd6c6e2-8016-4c9f-763f-479e8653e663",
+                "name": "IU O'Neill Students Partner with NCAA on Final Four Sustainability Playbook",
+                "description": "Master of Public Affairs students in Indiana University\u2019s O\u2019Neill School partnered with the NCAA, Indiana Sports Corp., and other local organizations to develop a sustainability playbook for the Final Four in Indianapolis. The project focused on reducing waste, improving recycling, and creating training resources for volunteers at major event sites. Students also helped connect leftover materials with local nonprofits, supporting more sustainable event operations and reuse of resources.",
+                "url": "https://news.iu.edu/live/news/49822-final-four-in-indianapolis-oneill-students-help",
+                "focuses": [
+                  "Education",
+                  "Community and Economic Development",
+                  "Environmental Sustainability"
+                ],
+                "startTime": "2026-04-02T00:00:00+00:00",
+                "endTime": null,
+                "contactFirstname": null,
+                "contactLastname": null,
+                "contactEmail": null,
+                "contactOffice": null,
+                "units": null,
+                "courses": null,
+                "goal_names": [
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 3: Economic Development"
+                ],
+                "community_partners": [
+                  {
+                    "id": "fd98758d-129a-41b7-6c6c-7efc5dc7668a",
+                    "name": "Indiana Sports Corp."
+                  },
+                  {
+                    "id": "59201a47-0e61-4aa8-464e-60c14dd3b5b4",
+                    "name": "NCAA"
+                  }
+                ],
+                "unit_links": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -86.14898,
           39.76436
         ]
@@ -15979,8 +16062,8 @@
                 "units": null,
                 "courses": null,
                 "goal_names": [
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes",
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 2: P-12 Education"
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 2: P-12 Education",
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
                 ],
                 "community_partners": [
                   {
@@ -16293,7 +16376,7 @@
             "contactEmails": "['na@na.org']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['School of Dentistry', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'Center for Service and Learning']",
+            "unitNames": "['Center for Service and Learning', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'School of Dentistry']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -16380,6 +16463,92 @@
                     "url": "https://he.cecollaboratory.com/collaboratory/F27JCV0D2/units/cba954d0-a364-45f0-4364-dc21b7ec8bc5#community_partners/?page=1&perPage=4&sortBy=newest"
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.188531,
+          39.765478
+        ]
+      },
+      "properties": {
+        "entity": [
+          {
+            "name": "IndyGo",
+            "id": "6ff07e49-61ed-4f3c-621e-2b84149738e5",
+            "portal_name": "Indianapolis",
+            "street": "1501 W. Washington St.",
+            "street2": null,
+            "zipcode": 46222.0,
+            "city": "Indianapolis",
+            "state": "IN",
+            "county": null,
+            "country": "US",
+            "type": "government",
+            "description": "The Indianapolis Public Transportation Corporation, branded as IndyGo, operates the public transit system for the city of Indianapolis, Indiana.",
+            "url": "www.indygo.net",
+            "phone": null,
+            "email": null,
+            "archived": false,
+            "status": "approved",
+            "activityName": [
+              "IndyGo Bus Community Health Training for Nursing Students",
+              "iDEW"
+            ],
+            "activityCnt": 1,
+            "role": "{\"Set goals\",\"Discuss how to work together\"}",
+            "contactNames": "[' '], ['n/a n/a']",
+            "contactEmails": "[''], ['na@na.org']",
+            "courses": "",
+            "sectionCnt": 1,
+            "unitNames": "['Luddy School of Informatics, Computing, and Engineering']",
+            "unitCnt": 1,
+            "externalId": "None",
+            "programs": [
+              "IUI 2030 Strategic Plan Pillar 3, Goal 1: Workforce Development",
+              "IUI 2030 Strategic Plan Pillar 3, Goal 2: P-12 Education",
+              "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
+            ],
+            "activities": [
+              {
+                "id": "09c7953b-3714-4cce-75d2-cfa61f0fb862",
+                "name": "IndyGo Bus Community Health Training for Nursing Students",
+                "description": "Indiana University School of Nursing students in the Healthy Populations course participate in a training experience on Indianapolis' IndyGo bus to better understand how transportation affects access to care and health outcomes. Working with transit ambassadors and community outreach staff, students learn to navigate public transit, use digital mapping tools, and connect transit systems to community health resources. The activity helps prepare future nurses to recognize social determinants of health and support patients who rely on public transportation.",
+                "url": "https://nursing.iu.edu/news-events/vital-signs/2026/2026-02-nursing-students-learn-community-health-on-the-indygo-bus.html?_gl=1*qpkhze*_gcl_au*MTIwMzA1MzkyOC4xNzc3NjUyNTM5*_ga*MTY2MzA1Mjk2Ni4xNzc3NjUyNTM5*_ga_61CH0D2DQW*czE3NzgyNTYwOTQkbzIwJGcxJHQxNzc4MjU2Njc4JGo2MCRsMCRoMA..",
+                "focuses": [
+                  "Education",
+                  "Community and Economic Development",
+                  "Health and Wellness"
+                ],
+                "startTime": "2024-12-02T00:00:00+00:00",
+                "endTime": "2026-04-02T00:00:00+00:00",
+                "contactFirstname": null,
+                "contactLastname": null,
+                "contactEmail": null,
+                "contactOffice": null,
+                "units": null,
+                "courses": null,
+                "goal_names": [
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
+                ],
+                "community_partners": [
+                  {
+                    "id": "6ff07e49-61ed-4f3c-621e-2b84149738e5",
+                    "name": "IndyGo"
+                  },
+                  {
+                    "id": "a7801e11-788d-4707-5ebc-7a502f848b41",
+                    "name": "Marion County Public Health Department"
+                  }
+                ],
+                "unit_links": []
               }
             ]
           }
@@ -16650,7 +16819,7 @@
             "contactEmails": "[''], ['GMartin1@isdh.IN.gov', '', '', '']",
             "courses": "['HLSC-H495-Fall 2024-Spring 2025']",
             "sectionCnt": 2,
-            "unitNames": "['Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health', 'School of Social Work', 'School of Medicine'], ['School of Health and Human Sciences']",
+            "unitNames": "['School of Health and Human Sciences'], ['School of Medicine', 'Richard M. Fairbanks School of Public Health', 'School of Social Work', 'Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health']",
             "unitCnt": 2,
             "externalId": "None",
             "programs": [
@@ -17219,6 +17388,89 @@
                     "url": "https://he.cecollaboratory.com/collaboratory/F27JCV0D2/units/13d1776b-0b9c-49aa-4db1-9c02546e3e6a#community_partners/?page=1&perPage=4&sortBy=newest"
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.171207,
+          39.76814
+        ]
+      },
+      "properties": {
+        "entity": [
+          {
+            "name": "NCAA",
+            "id": "59201a47-0e61-4aa8-464e-60c14dd3b5b4",
+            "portal_name": "Indianapolis",
+            "street": "700 W. washington St.",
+            "street2": null,
+            "zipcode": 46206,
+            "city": "Indianapolis",
+            "state": "IN",
+            "county": null,
+            "country": "US",
+            "type": "nonprofit",
+            "description": "The National Collegiate Athletic Association is a non-profit association which regulates athletes of 1,281 institutions, conferences, organizations, and individuals.",
+            "url": "http://www.ncaa.com/",
+            "phone": null,
+            "email": null,
+            "archived": false,
+            "status": "approved",
+            "activityName": [
+              "IU O'Neill Students Partner with NCAA on Final Four Sustainability Playbook"
+            ],
+            "activityCnt": 1,
+            "role": "",
+            "contactNames": "[' ']",
+            "contactEmails": "['']",
+            "courses": "",
+            "sectionCnt": 1,
+            "unitNames": "[\"Paul O'Neill School of Public and Environmental Affairs\"]",
+            "unitCnt": 1,
+            "externalId": "None",
+            "programs": [
+              "IUI 2030 Strategic Plan Pillar 3, Goal 3: Economic Development"
+            ],
+            "activities": [
+              {
+                "id": "2dd6c6e2-8016-4c9f-763f-479e8653e663",
+                "name": "IU O'Neill Students Partner with NCAA on Final Four Sustainability Playbook",
+                "description": "Master of Public Affairs students in Indiana University\u2019s O\u2019Neill School partnered with the NCAA, Indiana Sports Corp., and other local organizations to develop a sustainability playbook for the Final Four in Indianapolis. The project focused on reducing waste, improving recycling, and creating training resources for volunteers at major event sites. Students also helped connect leftover materials with local nonprofits, supporting more sustainable event operations and reuse of resources.",
+                "url": "https://news.iu.edu/live/news/49822-final-four-in-indianapolis-oneill-students-help",
+                "focuses": [
+                  "Education",
+                  "Community and Economic Development",
+                  "Environmental Sustainability"
+                ],
+                "startTime": "2026-04-02T00:00:00+00:00",
+                "endTime": null,
+                "contactFirstname": null,
+                "contactLastname": null,
+                "contactEmail": null,
+                "contactOffice": null,
+                "units": null,
+                "courses": null,
+                "goal_names": [
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 3: Economic Development"
+                ],
+                "community_partners": [
+                  {
+                    "id": "fd98758d-129a-41b7-6c6c-7efc5dc7668a",
+                    "name": "Indiana Sports Corp."
+                  },
+                  {
+                    "id": "59201a47-0e61-4aa8-464e-60c14dd3b5b4",
+                    "name": "NCAA"
+                  }
+                ],
+                "unit_links": []
               }
             ]
           }
@@ -18195,7 +18447,7 @@
             "contactEmails": "['']",
             "courses": "['PSY-B110-25468']",
             "sectionCnt": 1,
-            "unitNames": "['School of Nursing', 'Richard M. Fairbanks School of Public Health', 'School of Dentistry', 'Robert H. McKinney School of Law', 'School of Health and Human Sciences', 'School of Medicine', 'School of Social Work', 'University College']",
+            "unitNames": "['School of Medicine', 'School of Health and Human Sciences', 'University College', 'Robert H. McKinney School of Law', 'Richard M. Fairbanks School of Public Health', 'School of Nursing', 'School of Dentistry', 'School of Social Work']",
             "unitCnt": 1,
             "externalId": "X00368",
             "programs": [
@@ -20145,7 +20397,7 @@
             "contactEmails": "['NA@email.com']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['Richard M. Fairbanks School of Public Health', 'School of Nursing']",
+            "unitNames": "['School of Nursing', 'Richard M. Fairbanks School of Public Health']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -21168,7 +21420,7 @@
             "contactEmails": "['', '', '']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['School of Dentistry', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'Center for Service and Learning', 'Richard M. Fairbanks School of Public Health', 'School of Dentistry', 'VidaSana', 'School of Nursing'], ['School of Engineering and Technology', 'Career Services', 'Herron School of Art and Design', 'School of Nursing', 'Robert H. McKinney School of Law', 'Office of Workforce and Community Engagement', 'Richard M. Fairbanks School of Public Health']",
+            "unitNames": "['Richard M. Fairbanks School of Public Health', 'School of Dentistry', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'Center for Service and Learning', 'School of Dentistry', 'School of Nursing', 'VidaSana'], ['School of Engineering and Technology', 'Career Services', 'Herron School of Art and Design', 'School of Nursing', 'Robert H. McKinney School of Law', 'Office of Workforce and Community Engagement', 'Richard M. Fairbanks School of Public Health']",
             "unitCnt": 2,
             "externalId": "5385",
             "programs": [
@@ -23204,7 +23456,7 @@
             "contactEmails": "['']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['Center for Service and Learning', 'School of Dentistry', 'IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health']",
+            "unitNames": "['IUSD: Department of Cariology, Operative Dentistry, and Dental Public Health', 'School of Dentistry', 'Center for Service and Learning']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -27387,7 +27639,7 @@
             "contactEmails": "['', '', ''], ['']",
             "courses": "['HLSC-H495-Fall 2024-Spring 2025'], ['NURS-H360-All Sections']",
             "sectionCnt": 1,
-            "unitNames": "['School of Health and Human Sciences'], ['School of Nursing', 'Richard M. Fairbanks School of Public Health', 'School of Nursing']",
+            "unitNames": "['Richard M. Fairbanks School of Public Health', 'School of Nursing', 'School of Nursing'], ['School of Health and Human Sciences']",
             "unitCnt": 2,
             "externalId": "X00396",
             "programs": [
@@ -28789,7 +29041,7 @@
             "contactEmails": "['NA@email.com', 'NA@email.com']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['School of Engineering and Technology', 'ENGT: Engineering Technology']",
+            "unitNames": "['ENGT: Engineering Technology', 'School of Engineering and Technology']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -28966,7 +29218,7 @@
             "contactEmails": "['N/A@NA.COM']",
             "courses": "['PSY-B110-25468']",
             "sectionCnt": 1,
-            "unitNames": "['University College', 'School of Social Work', 'Robert H. McKinney School of Law', 'School of Dentistry', 'School of Nursing', 'School of Medicine', 'School of Health and Human Sciences', 'Richard M. Fairbanks School of Public Health']",
+            "unitNames": "['School of Health and Human Sciences', 'School of Nursing', 'Robert H. McKinney School of Law', 'School of Social Work', 'University College', 'School of Dentistry', 'Richard M. Fairbanks School of Public Health', 'School of Medicine']",
             "unitCnt": 1,
             "externalId": "None",
             "programs": [
@@ -31543,6 +31795,91 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -86.156373,
+          39.817046
+        ]
+      },
+      "properties": {
+        "entity": [
+          {
+            "name": "Dove Recovery House for Women",
+            "id": "754b54eb-bf75-4700-5aba-2fbc9ec8c350",
+            "portal_name": "Indianapolis",
+            "street": "3351 North Meridian Street",
+            "street2": "Suite 110",
+            "zipcode": 46208.0,
+            "city": "Indianapolis",
+            "state": "IN",
+            "county": null,
+            "country": "US",
+            "type": "nonprofit",
+            "description": null,
+            "url": null,
+            "phone": null,
+            "email": null,
+            "archived": false,
+            "status": "approved",
+            "activityName": [
+              "Music Therapy Partnership for Opioid Recovery in Indiana"
+            ],
+            "activityCnt": 1,
+            "role": "",
+            "contactNames": "[' ']",
+            "contactEmails": "['']",
+            "courses": "",
+            "sectionCnt": 1,
+            "unitNames": "['Herron School of Art and Design']",
+            "unitCnt": 1,
+            "externalId": "X00215",
+            "programs": [
+              "IUI 2030 Strategic Plan Pillar 3, Goal 1: Workforce Development",
+              "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
+            ],
+            "activities": [
+              {
+                "id": "1c5b7422-f8ef-4a21-681e-6f1df31d7230",
+                "name": "Music Therapy Partnership for Opioid Recovery in Indiana",
+                "description": "Indiana University Indianapolis music therapy researchers are partnering with community treatment centers and recovery organizations to support Indiana residents recovering from opioid use disorder. The program uses group music therapy sessions alongside medication-assisted recovery to help participants build coping skills, improve calmness and hopefulness, and strengthen readiness to manage stress. The work also expands collaboration with additional clinics and recovery settings in high-need communities, including services for pregnant or postpartum people and women in residential recovery.",
+                "url": "https://news.iu.edu/live/news/48339-music-therapy-research-program-helps-indiana",
+                "focuses": [
+                  "Arts and Culture",
+                  "Health and Wellness"
+                ],
+                "startTime": "2025-09-02T00:00:00+00:00",
+                "endTime": null,
+                "contactFirstname": "Kate",
+                "contactLastname": "Meyers-Coffman",
+                "contactEmail": "myerskaa@iu.edu",
+                "contactOffice": null,
+                "units": null,
+                "courses": null,
+                "goal_names": [
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes",
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 1: Workforce Development"
+                ],
+                "community_partners": [
+                  {
+                    "id": "754b54eb-bf75-4700-5aba-2fbc9ec8c350",
+                    "name": "Dove Recovery House for Women"
+                  }
+                ],
+                "unit_links": [
+                  {
+                    "name": "Herron School of Art and Design",
+                    "url": "https://he.cecollaboratory.com/collaboratory/F27JCV0D2/units/f90095a3-8eb4-4df5-7ea6-e9d19dcfc5dd#community_partners/?page=1&perPage=4&sortBy=newest"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -86.155106,
           39.818144
         ]
@@ -32983,6 +33320,7 @@
             "status": "approved",
             "activityName": [
               "Diabetes Impact Project - Indianapolis Neighborhoods (DIP-IN)",
+              "IndyGo Bus Community Health Training for Nursing Students",
               "Limiting Overdose through Collaborative Actions in Localities",
               "Marion County Public Health Department Plan to Strengthen Infrastructure, Workforce, and Data Systems",
               "Marion County School Liaison Support",
@@ -32990,11 +33328,11 @@
             ],
             "activityCnt": 2,
             "role": "{\"Identify areas of need\",\"Set goals\",\"Negotiate costs and logistics\",\"Identify expected measures, benefits, or outcomes\",\"Assist in raising funds for the activity\",\"Co-educate students\",\"Discuss how to work together\",\"Evaluate or provide feedback on students' work\",\"Evaluate or provide feedback on the process or relationship of the partners\",\"Manage the event or activity\",\"Measure the impact of the activity on the community\",\"Promote event to target populations\",\"Provide access to data\",\"Provide access to target populations\",\"Provide funds for the activity\",\"Provide information materials\",\"Provide volunteer site or space\",\"Supervise the activity\"}, {\"Identify areas of need\",\"Set goals\",\"Negotiate costs and logistics\",\"Identify expected measures, benefits, or outcomes\",\"Assist in raising funds for the activity\",\"Co-educate students\",\"Discuss how to work together\",\"Evaluate or provide feedback on students' work\",\"Evaluate or provide feedback on the process or relationship of the partners\",\"Manage the event or activity\",\"Measure the impact of the activity on the community\",\"Promote event to target populations\",\"Provide access to data\",\"Provide access to target populations\",\"Provide funds for the activity\",\"Provide information materials\",\"Provide volunteer site or space\",\"Supervise the activity\"},{Co-investigator,\"Discuss how to work together\"},{\"Co-educate students\",\"Discuss how to work together\",\"Manage the event or activity\",\"Provide access to target populations\",\"Supervise students\"},{Co-investigator}, {\"Identify expected measures, benefits, or outcomes\",\"Co-educate students\",\"Discuss how to work together\",\"Evaluate or provide feedback on the process or relationship of the partners\",\"Measure the impact of the activity on the community\",\"Provide access to data\",\"Provide access to target populations\"}",
-            "contactNames": "[' ', ' ', ' ', ' '], [' '], ['Ebony Funches']",
-            "contactEmails": "['', '', '', ''], [''], ['efunches@marionhealth.org']",
+            "contactNames": "[' ', ' ', ' ', ' ', ' '], [' '], ['Ebony Funches']",
+            "contactEmails": "['', '', '', '', ''], [''], ['efunches@marionhealth.org']",
             "courses": "",
             "sectionCnt": 1,
-            "unitNames": "['Richard M. Fairbanks School of Public Health'], ['School of Nursing', 'Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health']",
+            "unitNames": "['Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health', 'Richard M. Fairbanks School of Public Health', 'School of Nursing'], ['Richard M. Fairbanks School of Public Health']",
             "unitCnt": 2,
             "externalId": "None",
             "programs": [
@@ -33053,6 +33391,39 @@
                     "url": "https://he.cecollaboratory.com/collaboratory/F27JCV0D2/units/13d1776b-0b9c-49aa-4db1-9c02546e3e6a#community_partners/?page=1&perPage=4&sortBy=newest"
                   }
                 ]
+              },
+              {
+                "id": "09c7953b-3714-4cce-75d2-cfa61f0fb862",
+                "name": "IndyGo Bus Community Health Training for Nursing Students",
+                "description": "Indiana University School of Nursing students in the Healthy Populations course participate in a training experience on Indianapolis' IndyGo bus to better understand how transportation affects access to care and health outcomes. Working with transit ambassadors and community outreach staff, students learn to navigate public transit, use digital mapping tools, and connect transit systems to community health resources. The activity helps prepare future nurses to recognize social determinants of health and support patients who rely on public transportation.",
+                "url": "https://nursing.iu.edu/news-events/vital-signs/2026/2026-02-nursing-students-learn-community-health-on-the-indygo-bus.html?_gl=1*qpkhze*_gcl_au*MTIwMzA1MzkyOC4xNzc3NjUyNTM5*_ga*MTY2MzA1Mjk2Ni4xNzc3NjUyNTM5*_ga_61CH0D2DQW*czE3NzgyNTYwOTQkbzIwJGcxJHQxNzc4MjU2Njc4JGo2MCRsMCRoMA..",
+                "focuses": [
+                  "Education",
+                  "Community and Economic Development",
+                  "Health and Wellness"
+                ],
+                "startTime": "2024-12-02T00:00:00+00:00",
+                "endTime": "2026-04-02T00:00:00+00:00",
+                "contactFirstname": null,
+                "contactLastname": null,
+                "contactEmail": null,
+                "contactOffice": null,
+                "units": null,
+                "courses": null,
+                "goal_names": [
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
+                ],
+                "community_partners": [
+                  {
+                    "id": "6ff07e49-61ed-4f3c-621e-2b84149738e5",
+                    "name": "IndyGo"
+                  },
+                  {
+                    "id": "a7801e11-788d-4707-5ebc-7a502f848b41",
+                    "name": "Marion County Public Health Department"
+                  }
+                ],
+                "unit_links": []
               },
               {
                 "id": "239603c1-84d3-4d87-7b29-c827f9d015e9",
@@ -33133,8 +33504,8 @@
                 "units": null,
                 "courses": null,
                 "goal_names": [
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes",
-                  "IUI 2030 Strategic Plan Pillar 3, Goal 2: P-12 Education"
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 2: P-12 Education",
+                  "IUI 2030 Strategic Plan Pillar 3, Goal 4: Health Service Outcomes"
                 ],
                 "community_partners": [
                   {

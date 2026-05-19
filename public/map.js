@@ -1,20 +1,12 @@
 // Initialize the map, centered on Indianapolis
 const map = L.map("map").setView([39.7684, -86.1581], 10);
+window.map = map;
 
 // Add a base tile layer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
-
-// ── Marker icons ─────────────────────────────────────────────────────────────
-
-const defaultIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
-});
 
 
 
@@ -45,14 +37,6 @@ window.switchEntityTab = function(popupId, index) {
     if (!container) return;
     activateTab(container, 'entity-panel', 'entity-tab', 'entity', index);
   } catch (e) { console.error('switchEntityTab error', e); }
-};
-
-window.switchGoalTab = function(popupId, entityIndex, goalIndex) {
-  try {
-    const panel = document.querySelector(`#${popupId} .entity-panel[data-entity="${entityIndex}"]`);
-    if (!panel) return;
-    activateTab(panel, 'goal-panel', 'goal-tab', 'goal', goalIndex);
-  } catch (e) { console.error('switchGoalTab error', e); }
 };
 
 
@@ -117,62 +101,10 @@ function buildActivityHtml(activity, currentEntityId, goalLabel) {
 // ── Activity partner highlight ────────────────────────────────────────────────
 
 window.showOnlyActivityPartners = function(actId) {
-  // Visually uncheck all filter checkboxes (no change event fired, so applyFilters won't run)
-  document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
-    cb.checked = false;
-  });
-
-  const partnerIds = new Set(
-    (window._activityPartners?.[actId] ?? []).map(p => p.id)
-  );
-
-  Object.entries(window._markerRegistry ?? {}).forEach(([entityId, entry]) => {
-    const isPartner = partnerIds.has(Number(entityId)) || partnerIds.has(entityId);
-    const opacity = isPartner ? '1' : '0';
-    const events  = isPartner ? '' : 'none';
-    const el = entry.marker.getElement();
-    if (el) { el.style.opacity = opacity; el.style.pointerEvents = events; }
-    const shadow = entry.marker._shadow;
-    if (shadow) { shadow.style.opacity = opacity; }
-  });
+  const partners = window._activityPartners?.[actId] ?? [];
+  window.setPartnerFilter(partners.map(p => String(p.id)));
 };
 
-window.resetMarkerVisibility = function() {
-  Object.values(window._markerRegistry ?? {}).forEach(entry => {
-    const el = entry.marker.getElement();
-    if (el) { el.style.opacity = '1'; el.style.pointerEvents = ''; }
-    const shadow = entry.marker._shadow;
-    if (shadow) { shadow.style.opacity = '1'; }
-  });
-};
-
-
-// ── Partner dropdown helpers ──────────────────────────────────────────────────
-
-window.toggleActivityPartners = function(actKey, listId, currentEntityId) {
-  const listEl = document.getElementById(listId);
-  if (!listEl) return;
-
-  // Toggle off if already visible
-  if (listEl.style.display !== 'none' && listEl.style.display !== '') {
-    listEl.style.display = 'none';
-    return;
-  }
-
-  // Read pre-computed partner list; filter out the current org
-  const partners = (window._activityPartners?.[actKey] ?? [])
-    .filter(p => p.id !== currentEntityId);
-
-  listEl.innerHTML = partners.length
-    ? partners.map(p =>
-        `<div class="partner-link"
-          onclick="openEntityPopup(${attrJson(p.id)}, ${attrJson(p.name)})"
-        >${p.name}</div>`
-      ).join('')
-    : '<div class="partner-link-empty">No other partners found.</div>';
-
-  listEl.style.display = 'block';
-};
 
 window.openEntityPopup = function(entityId, entityName) {
   const entry = window._markerRegistry?.[entityId];

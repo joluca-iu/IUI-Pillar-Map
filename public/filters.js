@@ -1,23 +1,44 @@
 let cachedGeoJson = null;
 let activityFilter = null;
+let schoolFilter = null;
+let partnerFilter = null; // Set of entity ID strings, or null
 
-const clearBtn = document.getElementById("clearFilters");
-
-clearBtn.addEventListener("click", () => {
+function clearAllFilters() {
   activityFilter = null;
-  document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
-    cb.checked = false;
-  });
-  applyFilters();
-});
+  schoolFilter = null;
+  partnerFilter = null;
+  if (window.clearSchoolSearch) window.clearSchoolSearch();
+}
 
-window.filterByActivity = function(actName) {
-  activityFilter = actName;
+window.setSchoolFilter = function(entityId) {
+  clearAllFilters();
+  schoolFilter = entityId || null;
   document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
     cb.checked = false;
   });
   applyFilters();
 };
+
+window.setPartnerFilter = function(partnerIds) {
+  clearAllFilters();
+  partnerFilter = partnerIds && partnerIds.length > 0
+    ? new Set(partnerIds.map(String))
+    : null;
+  document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
+    cb.checked = false;
+  });
+  applyFilters();
+};
+
+const clearBtn = document.getElementById("clearFilters");
+
+clearBtn.addEventListener("click", () => {
+  clearAllFilters();
+  document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
+    cb.checked = false;
+  });
+  applyFilters();
+});
 
 
 function check_filter_status() {
@@ -42,7 +63,13 @@ function applyWithData(geo_json_data) {
       .map(feature => {
         const entities = feature.properties?.entity ?? [];
 
-        const filteredEntities = activityFilter !== null
+        const filteredEntities = schoolFilter !== null
+          // School filter mode: show only the selected entity by ID
+          ? entities.filter(entity => entity.id === schoolFilter)
+          : partnerFilter !== null
+          // Partner filter mode: show only entities whose ID is in the partner set
+          ? entities.filter(entity => partnerFilter.has(String(entity.id)))
+          : activityFilter !== null
           // Activity filter mode: match against the raw activityName array (always populated)
           ? entities.filter(entity =>
               Array.isArray(entity.activityName) &&
@@ -83,6 +110,7 @@ function applyFilters() {
     .then(res => res.json())
     .then(geo_json_data => {
       cachedGeoJson = geo_json_data;
+      window.cachedGeoJson = geo_json_data;
       applyWithData(geo_json_data);
     })
     .catch(err => console.error("Error loading schools.geojson:", err));
@@ -91,7 +119,7 @@ function applyFilters() {
 
 document.querySelectorAll('#filters input[type="checkbox"]').forEach(checkbox => {
   checkbox.addEventListener('change', () => {
-    activityFilter = null; // checkbox interaction clears activity filter
+    clearAllFilters();
     applyFilters();
   });
 });
